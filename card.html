@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("card.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 85rem; /* Aumentamos para caber mais cards confortavelmente na mesma linha */
+            width: 100%;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Empurra o botão sempre para o rodapé */
+            width: 260px; /* Travamos uma largura fixa perfeita para os 5 cards respirarem */
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 240px; /* Força todas as fotos a terem o mesmo tamanho exato */
+            object-fit: cover; /* Evita que a foto fique distorcida ou achatada */
+            display: block;
+        }
+        .card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        .card-content h2 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+            color: #000;
+        }
+        .card-content p {
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            margin: 0 0 1.5rem 0;
+            text-align: left;
+            line-height: 1.4;
+            height: 160px; /* TRAVA A ALTURA DO TEXTO: Resolve o erro do card esticado do Sam */
+            overflow: hidden; /* Esconde o texto que passar do limite para não quebrar o design */
+        }
+        .card-content a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #8b0606; /* Seu vermelho escuro elegante */
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: auto; /* Garante o alinhamento perfeito na base */
+        }
+        @media (max-width: 480px) {
+            html {
+                font-size: 14px;
+            }
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- CONTAINER DOS CARDS -->
+    <div class="container">
+        
+        <!-- CARD: DEAN WINCHESTER -->
+        <div class="card">
+            <img src="dean-Photoroom.png" alt="Imagem do Dean">
+            <div class="card-content">
+                <h2>Dean Winchester</h2>
+                <p>Dean Winchester é um dos dois protagonistas da série Supernatural. Nascido em 1979, teve a infância interrompida quando sua mãe foi morta por um demônio. Criado pelo pai para ser um caçador, ele dedicou a vida a proteger o irmão menor, Sam, e a combater forças sobrenaturais ao longo de 15 temporadas.</p>
+                <a href="curiosidades Dean.html" target="_blank">para curiosidades</a>
+            </div>
+        </div>
+
+        <!-- CARD: SAM WINCHESTER -->
+        <div class="card">
+            <img src="sam-Photoroom.png" alt="Imagem do Sam">
+            <div class="card-content">
+                <h2>Sam Winchester</h2>
+                <p>Samuel "Sam" Winchester (interpretado por Jared Padalecki) é um dos internacionais protagonistas da série Supernatural. Nascido em 2 de maio de 1983, ele perdeu a mãe, Mary, para um demônio quando bebê. Criado na estrada pelo pai, John, para caçar monstros, Sam tentou ter uma vida normal estudando em Stanford, mas retornou à caçada após tragédias pessoais.</p>
+                <a href="curiosidades Sam.html" target="_blank">para curiosidades</a>
+            </div>
+        </div>
+
+        <!-- CARD: JOHN WINCHESTER -->
+        <div class="card">
+            <img src="john-Photoroom.png" alt="Imagem do John">
+            <div class="card-content">
+                <h2>John Winchester</h2>
+                <p>John Winchester (1954–2006) é um personagem central da série Supernatural. Ex-fuzileiro naval e mecânico, sua vida mudou em 1983 quando sua esposa Mary foi morta pelo demônio Azazel. Ele virou caçador e treinou os filhos Dean e Sam para combater o mal, tornando-se um pai severo e obcecado por vingança.</p>
+                <a href="curiosidades John.html" target="_blank">para curiosidades</a>
+            </div>
+        </div>
+
+        <!-- CARD: CASTIEL -->
+        <div class="card">
+            <img src="castiel-Photoroom.png" alt="Imagem do castiel">
+            <div class="card-content">
+                <h2>Castiel</h2>
+                <p>Na série Supernatural, Castiel começa como um anjo comum e soldado do exército celestial. Após ser morto e ressuscitado por Deus, ele é promovido ao posto de serafim (um anjo de classe superior, com mais poder e autonomia em relação ao Céu). Ele não é um arcanjo.</p>
+                <a href="curiosidades Castiel.html" target="_blank">para curiosidades</a>
+            </div>
+        </div>
+
+        <!-- CARD: O IMPALA -->
+        <div class="card">
+            <img src="carro.webp" alt="Imagem do impala">
+            <div class="card-content">
+                <h2>Impala</h2>
+                <p>O Chevrolet Impala de 1967 preto é o lendário carro da série Supernatural. Chamado carinhosamente de "Baby" por Dean Winchester, o veículo foi herdado de seu pai, John Winchester, e funciona como casa, arsenal e o verdadeiro terceiro protagonista da história ao longo das 15 temporadas.</p>
+                <a href="curiosidades impala.html" target="_blank">para curiosidades</a>
+            </div> 
+        </div>
+
+    </div>
+
+    <!-- BOTÃO VERMELHO PARA VOLTAR PARA A PÁGINA INICIAL (INDEX) FORÇADO PARA BAIXO -->
+    <div style="width: 100%; clear: both; margin-top: 50px; margin-bottom: 30px; text-align: center; display: block;">
+        <a href="index.html" style="display: inline-block; background-color: #8b0606; color: #ffffff !important; font-family: sans-serif; font-size: 22px; font-weight: bold; text-transform: uppercase; text-decoration: none; padding: 14px 40px; border-radius: 6px; box-shadow: 0px 4px 15px rgba(139, 6, 6, 0.5);">
+            Voltar 
+        </a>
+    </div>
+
+</body>
+</html>
